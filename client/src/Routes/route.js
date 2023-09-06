@@ -9,6 +9,7 @@ const QueryEmail = lazy(() => import("../Component/User/QueryEmail"));
 const Otp = lazy(() => import("../Component/User/Otp"));
 const Reset = lazy(() => import("../Component/User/Reset"));
 const Translator = lazy(() => import("../Pages/Translator"));
+const Googlelogin = lazy(() => import("../Component/User/Googlelogins"));
 const Invalid = lazy(() => import("../commons/InvalidPage"));
 
 export const routes = {
@@ -47,6 +48,10 @@ export const routes = {
   translator: {
     path: "/translator",
     element: Translator,
+  },
+  Googlelogin: {
+    path: "/goglelogin",
+    element: Googlelogin,
   },
   invalid: {
     path: "/*",
